@@ -6,7 +6,7 @@ export default function OneInput(props){
 
     return(
         
-            <div className="form-group col-md-4">
+            <div className={`form-group col-md-${props.size}`}>
                     <label for={props.type}>{props.name}</label>
                     <input type={props.type} className="form-control" id={props.type} value={formInput} onChange = {event => changeFormInput(event.target.value)}/>
             </div>

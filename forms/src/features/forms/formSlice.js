@@ -15,7 +15,7 @@ const initialState = {
   };
 
   export const formSlice = createSlice({
-        name: "forms",
+        name: 'forms',
         initialState,
         reducers: {
             firstNameChange: (state,action) => {
@@ -25,6 +25,8 @@ const initialState = {
 
   });
 
-  export const selectFirstName = state => state.forms.firstName;
+  export const { firstNameChange } = formSlice.actions;
+
+  export const selectFirstName = state => state.firstName
 
   export default formSlice.reducer;
