@@ -13,3 +13,18 @@ const initialState = {
     city: '',
     stateOrProvince: ''
   };
+
+  export const formSlice = createSlice({
+        name: "forms",
+        initialState,
+        reducers: {
+            firstNameChange: (state,action) => {
+                
+            }
+        }
+
+  });
+
+  export const selectFirstName = state => state.forms.firstName;
+
+  export default formSlice.reducer;
